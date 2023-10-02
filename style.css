@@ -1,160 +1,159 @@
-.{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-  
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 10vh;
+    width: 100%;
 }
 
-.akgec_Header{
-background-color:rgba(47, 156, 47, 0.762);
-height: 120px;
-width: 100%;
-display: flex;
-position: relative;
 
-
-}
-.left_Header img{
-    height: 70px;
-    width: 70px;
-padding-left: 20px;
-padding-top: 15px;
-}
-.name h3{
-    color: rgb(12, 11, 11);
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 25px;
-padding-left: 20px;
-margin-bottom: 0px;
-
-}
-
-.name h5{
-    color:rgb(12, 10, 10);
-    width: 400px;
-    padding-left: 20px;
-    margin-top: 5px;
-}
- 
-
-ul.dropdown li{
-    color: white;
-    font-weight: bold;    
-    display: inline-block;
+.nav_Bar{
+    display: flex;
     position: relative;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+}
+.nav_Links  li  {
+text-decoration: none;
+list-style-type:none;
+margin-right: 10px;
+}
+.nav_Links ul li a {
+    text-decoration: none;
+}
+.logo img{
+    padding-left: 40px;
+    padding-bottom: 25px;
+    
+}
+.college_Name h2{
+    padding-left: 10px;
+}
+.college_Name p{
+    font-size: 0.8rem;
+   padding-left: 10px;
+}
+.nav_Bar{
+    padding-top: 20px;
+    background-color: rgb(40, 151, 40);
+}
+.nav_Links ul li a{
+    color:white;
+    padding-left: 15px;
+    margin-right: 10px;
+font-size: 1rem;
+font-family: Arial, Helvetica, sans-serif;
+}
+.nav_Links ul {
     padding-top: 20px;
 }
-
-ul li a{
-    display: block;
-    padding: 10px 25px;
-    color:white;
-   text-decoration: none;
-   text-align: center;
-   font-size: 15px;
+.nav_Links ul li a:hover {
+    color: rgb(2, 52, 2);
 }
- ul li ul.about_Dropdown li{
-    display:inline-block;
-    font-family:'Times New Roman', Times, serif ;
-}
-
-
-ul li ul.about_Dropdown{
-    background-color:rgb(51, 166, 51) ;
-    
-    position:absolute;
-    
-    display: none;
-    
-    
-   
-}
-ul.dropdown li a:hover{
-
-font-size:20px;
-color:rgb(2, 70, 33);
-}
-
-ul li:hover ul.about_Dropdown {
-    display: inline;
-    width:500px;
-    height: 200px; 
-    position: absolute; 
-}
-.body_Background{
-    
-    width: 100%;
-    height: 100vh ;
-    margin-top: -10px;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-
-}
-.body_Background {
-    background-image:url(assets/faithcentre.jpg);
-height: 100%;
-width: 100%;
+.box{
+    background-color: black;
+    height: 85vh;
+    background-image: url(assets/faithcentre.jpg);
+    background-size:cover;
 background-position: center;
-background-size: cover;
-position:relative;
 
 }
-
-.naac_Banner img{
-    height: 500px;
-    width: 90vw;
-padding-top: 10px;
-padding-left: 50px;
-position: relative;
-}
-#home_Page_Body{
-    height:100%
-}
-.about_Akgec{
- 
-    
-    background-image: url(assets/akgimage.jpg);
-    background-size: cover;
-   
-    height: 450px;
-    border: 2px solid green;
-    
-    
-   
-
-    
-}
-.about_Akgec h1{
+.welcome_Section{
+    width: 90%;
+    color: rgb(10, 9, 9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 30px;
-    color:rgb(21, 24, 20);
-    font-family:'oswald, sans-serif';
-    text-decoration: underline;
-   
 }
-.about_Akgec p{
-    font-size: 25px;
-   align-content: center;
-   padding-left: 60px;
-   padding-right: 30px;
-   color:rgb(13, 14, 14);
-   word-spacing: 4px;
+.welcome_Section h1{
+    font-size: 4rem;
 }
-.courses{
+.welcome_Section p{
+    margin: 10px 0 40px;
+    font-size: 0.8rem;
+}
+.visit_Button{ 
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.visit_Button:hover{
+    border: 1 px solid #0ae792;
+    background:#0ae792 ;
+    transition: 1s;
+}
+.about_us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.about_Blocks{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.blocks{
+    flex-basis: 31%;
+    background: #6d9c8ae4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.blocks:hover{
+    box-shadow: 0 0 20px 0px rgba(0 ,0, 0, 0.2);
+}
+
+.footer{
+    height: 50vh;
+    background-color: #2b7f3d;
+    border: 2px solid rgb(86, 128, 91) ;
     display: flex;
     flex-direction: row;
-    background-color: black;
+    padding-top: 30px;
+    
 }
-.courses .btech{
-    background-color: aliceblue;
+.enquiry p {
+    color: rgb(180, 180, 46);
 }
-.courses .mtech{
-    background-color: aliceblue;
+/* .foot_2{
+   padding-left: 20px;
+} */
+.foot_3{
+    padding-left: 100px;
 }
-.courses .mca{
-    background-color: aliceblue;
-}
-
-
